@@ -26,7 +26,7 @@ fun countWord(filePath: String): Unit {
     //stores key and value in map
     for (line in srcFile.readLines()){
         var lineSplit = line.split(" ",",",". ",";",":","/","\n","?","\\","<",">","#",
-            "{","}","[","]","\"","!","@","$","%","^","&","*","(",")","\t","\r",".")
+            "{","}","[","]","\"","!","@","$","%","^","&","*","(",")","\t","\r",".") //these are the delimeters
         for (word in lineSplit){
             if (word in wordFreq){
                 var count = wordFreq.getValue(word)
