@@ -45,14 +45,16 @@ fun countWord(filePath: String): Unit {
     }
 }
 
-fun main() {
+fun main(args: Array<String>) {
+    var command = args
+    println(args)
 //    val path = Paths.get("").toAbsolutePath().toString()
 
 
-    val path = System.getProperty("user.dir")
-    do {
-        println(path)
-        var command = readln()  //example - cat filepath.txt
+//    val path = System.getProperty("user.dir")
+    /*do {
+//        print("$path>")
+        var command = args  //example - cat filepath.txt
         var commandSplit = command.split(" ") //["cat", "filepath.txt"]
 
         when (commandSplit[0]){
@@ -74,5 +76,6 @@ fun main() {
             "exit" -> print("Exiting...")
             else -> print("Invalid Query")
         }
-    }while (commandSplit[0] != "exit")
+        println()
+    }while (commandSplit[0] != "exit")*/
 }
